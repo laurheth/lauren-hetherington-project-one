@@ -230,7 +230,7 @@ nav a:focus {
 
 .gallery,
 .icon-links ul {
-    margin: 10rem 0;
+    margin: 8rem 0;
 }
 
 .gallery li,
@@ -272,7 +272,7 @@ nav a:focus {
 }
 
 .about-right-content p {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .about-right-content a {
@@ -366,6 +366,7 @@ nav a:focus {
     text-transform: capitalize;
     font-size: 3rem;
     background: transparent;
+    margin-top: 1rem;
 }
 
 .icon-links a:focus,
@@ -473,6 +474,8 @@ footer {
     color: #ffffff;
 }
 
+/* The font style of the footer doesn't look like Barlow or Offside. Looks like some sort of sans serif? */
+/* Going to move forward */
 footer p {
     text-align: center;
     text-transform: capitalize;
@@ -535,6 +538,11 @@ footer p {
         margin: 0;
     }
 
+    /* this button/link becomes a bit bigger */
+    .friends-about .about-right-content a {
+        padding: 2rem 3.5rem;
+    }
+
     .friends-about .about-right-content p:last-of-type {
         text-align: center;
     }
@@ -569,9 +577,18 @@ footer p {
 
 @media (max-width: 750px) {
 
+    .header-content {
+        width: 60%;
+    }
+
     .header-content p {
         font-size: 5rem;
         line-height: normal;
+    }
+
+    /* some links are almost imperceptably larger */
+    a {
+        font-size: 2.1rem;
     }
 
     /* change top nav and social icons into a hamburger menu */
@@ -679,7 +696,7 @@ footer p {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     /* general changes, font size reductions */
     p {
         font-size: 1.8rem;
@@ -743,6 +760,6 @@ footer p {
 @media (max-height: 560px) {
     header {
         height: auto;
-        padding-bottom: 3rem;
+        padding-bottom: 10rem;
     }
 }
