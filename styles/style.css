@@ -57,10 +57,11 @@ nav {
     position: absolute;
     top: 1rem;
     margin: 0 auto;
-    transition: 0;
+    transition: 0s;
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 30;
 }
 
 .skip-link a {
@@ -71,13 +72,6 @@ nav {
 }
 
 /* the social links in the hamburger menu default to being hidden until smaller screen sizes, where they are relevant */
-nav .social {
-    display: none;
-}
-
-nav .social .fab {
-    font-size: 2rem;
-}
 
 h1, h2 {
     font-weight: normal;
@@ -157,7 +151,7 @@ h1 {
     width: 5rem;
 }
 
-header li {
+header .main-nav li {
     display: inline-block;
     padding: 0 0rem;
     text-shadow: 1rem 1rem 1rem #000000;
@@ -177,6 +171,7 @@ nav a:focus {
 
 .top-bar {
     margin-bottom: 4rem;
+    position: relative;
 }
 
 .top-bar .main-nav li:last-of-type {
@@ -195,14 +190,14 @@ nav a:focus {
 }
 
 .social-icons {
-    float: right;
     /* width is a percentage of the wrapper, which is 80% of the full width */
     /* Want to put this in the 10% margin on the right, based on full page width */
     /* So, 10% / (8/10) = 12.5% to fit in the margin */
     width: 12.5%;
-    position: relative;
-    left: 12.5%;
+    position: absolute;
     text-align: center;
+    right: -12.5%;
+    padding-top: 4rem;
 }
 
 .social-icons a {
@@ -592,13 +587,6 @@ footer p {
     }
 
     /* change top nav and social icons into a hamburger menu */
-    .social-icons {
-        display: none;
-    }
-
-    nav .social {
-        display: block;
-    }
 
     header {
         overflow: hidden;
@@ -629,6 +617,18 @@ footer p {
     .top-bar nav li a,
     .top-bar nav .main-nav li a:last-of-type {
         padding: 1rem 2.5rem;
+    }
+
+    .top-bar nav .social-icons {
+        position: static;
+        width: auto;
+        padding-top: 0;
+        text-shadow: 1rem 1rem 1rem #000;
+        font-size: 1rem;
+    }
+
+    .social-icons .fab {
+        margin: 0.5rem 0;
     }
 
     .fa-bars:hover {
