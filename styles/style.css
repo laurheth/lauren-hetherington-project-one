@@ -120,7 +120,7 @@ header {
     background: #2C2D2C url(../assets/header-image.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom;
 }
 
 /* hamburger menu defaults to hidden */
@@ -205,6 +205,7 @@ nav a:focus {
 .social-icons a {
     display: block;
     padding: 0;
+    text-shadow: 0 0 5px black;
 }
 
 .fab {
@@ -472,7 +473,7 @@ footer {
 }
 
 /* The font style of the footer doesn't look like Barlow or Offside. Looks like some sort of sans serif? */
-/* Going to move forward */
+/* Going to move forward as-is though */
 footer p {
     text-align: center;
     text-transform: capitalize;
@@ -625,8 +626,11 @@ footer p {
         position: static;
         width: auto;
         padding-top: 0;
-        text-shadow: 1rem 1rem 1rem #000;
         font-size: 1rem;
+    }
+    
+    .top-bar nav .social-icons a {
+        text-shadow: 1rem 1rem 1rem #000;
     }
 
     .social-icons .fab {
