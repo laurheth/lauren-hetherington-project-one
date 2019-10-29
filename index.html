@@ -13,9 +13,9 @@
 </head>
 <body>
     <!-- skip to main content link? -->
-    <div class="skip-link"><a href="#" class="visually-hidden">Skip to main content.</a></div>
+    <div class="skip-link"><a href="#about" class="visually-hidden">Skip to main content.</a></div>
     <!-- begin header -->
-    <header>
+    <header id="home">
         <div class="wrapper">
             <div class="top-bar clearfix">
                 <h1>Panda sanctuary</h1>
@@ -25,10 +25,10 @@
                     <i class="fa fa-bars"></i>
                     <nav>
                         <ul class="main-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                         <ul>
                             <!-- social icons in hamburger menu on small screens -->
@@ -80,7 +80,7 @@
     </header>
     <!-- end header -->
     <main>
-        <section class="friends-about">
+        <section class="friends-about" id="about">
             <div class="wrapper clearfix">
                 <h2>
                     Our new friends
@@ -107,7 +107,7 @@
             </div>
         </section>
 
-        <section class="panda-bios">
+        <section class="panda-bios" id="blog">
             <!-- first row of panda bios -->
             <div class="row">
                 <div class="right-bleed-image">
@@ -174,7 +174,7 @@
             </div>
         </section>
         <!-- subscriptions, contacts, and bottom nav -->
-        <section class="bottom clearfix">
+        <section class="bottom clearfix" id="contact">
             <div class="wrapper">
                 <form class="clearfix" action="#">
                     <h2>Stay updated</h2>
